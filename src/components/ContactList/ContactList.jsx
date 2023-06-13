@@ -3,7 +3,6 @@ import {
   Flex,
   Box,
   Text,
-  IconButton,
   CloseButton,
   SimpleGrid,
 } from '@chakra-ui/react';
@@ -46,10 +45,9 @@ const ContactList = () => {
               >
                 <Flex alignItems="center" justifyContent="space-between" p="2">
                   <Text>{name}</Text>
-                  <IconButton
-                    icon={<CloseButton />}
-                    onClick={() => handleDeleteContact(id)}
-                  />
+                  <CloseButton onClick={() => handleDeleteContact(id)}/>
+                    
+                 
                 </Flex>
                 <Box p="2">
                   <Text>{number}</Text>
