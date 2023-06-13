@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Helmet } from 'react-helmet';
+// import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import ContactForm from 'components/ContactForm/ContactForm';
 import ContactList from 'components/ContactList/ContactList';
@@ -20,9 +20,9 @@ const App = () => {
 
   return (
     <div>
-      <Helmet>
+      
         <h1>Phonebook</h1>
-      </Helmet>
+      
       <ContactForm />
       <div>{isLoading && 'Request in progress...'}</div>
       {isLoading ? null : <Filter />}
