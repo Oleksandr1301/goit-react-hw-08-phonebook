@@ -1,7 +1,7 @@
 import { Container, Box, Heading } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { LoginForm } from 'components/LoginForm/LoginForm';
+import { LoginForm } from '../components/LoginForm/LoginForm';
 
 export default function Login() {
   return (
