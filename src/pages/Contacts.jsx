@@ -1,7 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { Helmet, HelmetProvider } from 'react-helmet-async';
+
+import { Text } from '@chakra-ui/react';
 
 import ContactForm from 'components/ContactForm/ContactForm';
 import ContactList from 'components/ContactList/ContactList';
@@ -20,8 +21,8 @@ const App = () => {
 
   return (
     <div>
-      
-        <h1>Phonebook</h1>
+     
+        <Text fontSize='6xl' m="4">Phonebook</Text>
       
       <ContactForm />
       <div>{isLoading && 'Request in progress...'}</div>
